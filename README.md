@@ -5,80 +5,88 @@ Android Intermediate (23h)
 
 1. Procesos en Segundo Plano
 
-- Tareas en segundo plano - AsyncTask
+  - Tareas en segundo plano - AsyncTask
 
-- Threads
+  - Threads
 
 2. Navegación
 
-- Pestañas (Tabs)
+  - Pestañas (Tabs)
 
-- Navigation drawer
+  - Navigation drawer
 
 3. Persistencia de Datos
 
-- Gestión de Preferencia (Sharedpreferences)
+  - Gestión de Preferencia (Sharedpreferences)
 
-- Primeros pasos con Sqlite
+  - Primeros pasos con Sqlite
 
-- Inserción, actualización y eliminación de registros
+  - Inserción, actualización y eliminación de registros
 
-- Consulta y recuperación de registros
+  - Consulta y recuperación de registros
 
-- Diseño de la capa database en android
+  - Diseño de la capa database en android
 
-- Almacenamiento en cache.
+  - Almacenamiento en cache.
 
 4. Conexión Remota
 
-- Creación de loaders para carga de datos desde la web
+  - Creación de loaders para carga de datos desde la web
 
 5. Google Maps y Geolocalización
 
-- Localización mediante el dispositivo
+  - Localización mediante el dispositivo
 
-- Google API
+  - Google API
 
-- Mapas en Android (Google Maps Android API v2)
+  - Mapas en Android (Google Maps Android API v2)
 
 6. Notificaciones
 
-- Notificaciones (Toast, barra de estados, Dialogos, Snackbar)
+  - Notificaciones (Toast, barra de estados, Dialogos, Snackbar)
 
 7. Multimedia
 
-- Derivando funcionalidad a otras aplicaciones (Cámara de foto, agenda de contactos, email, Lector de códigos QR, etc)
+  - Derivando funcionalidad a otras aplicaciones (Cámara de foto, agenda de contactos, email, Lector de códigos QR, etc)
 
 8. Android M
 
-- Android permission system
+  - Android permission system
 
 9. Presentación Final de Proyectos
 
 ### Lecciones :
 
 - Lección 1 
+  
   Procesos en Segundo Plano
   
 - Lección 2 
+  
   Navegación
   
 - Lección 3
+  
   Persistencia de Datos
   
 - Lección 4 
+  
   Conexión Remota
   
 - Lección 5
+  
   Google Maps y Geolocalización
   
 - Lección 6
+  
   Notificaciones
   
 - Lección 7
+
   Multimedia
   
 - Lección 8
+
   Android M y Presentación final de proyectos
   
   
