@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AsynchronousSample</string>
+    <string name="title_activity_my_asynctask">MyAsynctaskActivity</string>
+</resources>
