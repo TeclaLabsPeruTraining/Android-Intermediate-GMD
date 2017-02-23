@@ -26,9 +26,8 @@ public class ImageTaskActivity extends AppCompatActivity {
         //https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s1024/A%252520Photographer.jpg
         try{
             URL url = new URL("https://lh6.googleusercontent.com/-55osAWw3x0Q/URquUtcFr5I/AAAAAAAAAbs/rWlj1RUKrYI/s1024/A%252520Photographer.jpg");
-
             imageTask = new ImageTask(ImageTaskActivity.this, iviLogo);
-            imageTask.equals(url);
+            imageTask.execute(url);
         }catch (Exception e){
             Log.v("Error",e.toString());
         }
