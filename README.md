@@ -523,19 +523,19 @@ public class BouncingBall extends JFrame {
 
 ¿Qué es el MainThread en Android?
 
-![mainthread](../images/main_thread_android.jpeg)
+![mainthread](./images/main_thread_android.jpeg)
 
-![mainthread1](../images/mainthreadandroid.png)
+![mainthread1](./images/mainthreadandroid.png)
 
 ¿En que caso usar alguno de estos componentes ?
 
 - Cuando sea requerido ejecutar procesos en background pero se necesite informar a la UI que esta pasando, por ejemplo el porcentaje del proceso . En este caso debemos usar un AsyncTask
 
-![asynctask](../images/asynctask.png)
+![asynctask](./images/asynctask.png)
 
 - Cuando sea requerido ejecutar procesos en background independiente de la UI , es decir puede que la app se cierre o pause y se necesite seguir ejecutando una acciòn. En este caso podemos usar un Service.  
 
-![service](../images/service_lifecycle.png)
+![service](./images/service_lifecycle.png)
 
 ### Referencias 
 
