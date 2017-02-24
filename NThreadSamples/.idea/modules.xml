@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ThreadSamples.iml" filepath="$PROJECT_DIR$/ThreadSamples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NThreadSamples.iml" filepath="$PROJECT_DIR$/NThreadSamples.iml" />
     </modules>
   </component>
 </project>
