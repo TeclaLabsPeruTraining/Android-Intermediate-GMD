@@ -2,7 +2,7 @@
 
 *Navigation Drawer* es un patrón de diseño, el cual permite manejar la navegación dentro de nuestra aplicación. Este patrón consta de un menú lateral izquierdo el cual se encuentra escondido por defecto pero aparece cuando el usuario hace un swipe desde el lado izquierdo de la pantalla o presiona el botón de menú. Este menú muestra las principales opciones de navegación de nuestra aplicación.
 
-![navigation drawer pattern](https://github.com/BelatrixTraining/Android-Intermediate/blob/Lesson1/images/patterns_navigation_drawer.png)
+![navigation drawer pattern](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson2-Navegacion/images/patterns_navigation_drawer.png)
 
 ## Tipos de Navigation Drawer
 
@@ -15,9 +15,9 @@ Es una variante del *Persistent Navigation Drawer*. Se diferencia porque en su e
  - Temporary
 *Temporary Navigation Drawer* pueden ser abiertos o cerrados. Aparece cerrado por defecto, y cuando es abierto se muestra por encima del contenido hasta que una opción es seleccionada. Es el que suele usar en *smartphones* o *tablets*
 
-![temporal navigation drawer closed](https://github.com/BelatrixTraining/Android-Intermediate/blob/Lesson1/images/patterns_navdrawer_behavior_temporary1.png)
+![temporal navigation drawer closed](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson2-Navegacion/images/patterns_navdrawer_behavior_temporary1.png)
 
-![temporal navigation drawer opened](https://github.com/BelatrixTraining/Android-Intermediate/blob/Lesson1/images/patterns_navdrawer_behavior_temporary2.png)
+![temporal navigation drawer opened](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson2-Navegacion/images/patterns_navdrawer_behavior_temporary2.png)
 
 
 ##Como implementarlo?
