@@ -5,7 +5,6 @@ Android Intermediate (23h)
 
 Navegación
 
-  - Pestañas (Tabs)
+  - [Pestañas (Tabs)](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson2-Navegacion/ViewPager-Tabs.md)
 
-  - Navigation drawer
-
+  - [Navigation drawer](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson2-Navegacion/NavigationDrawer.md)
