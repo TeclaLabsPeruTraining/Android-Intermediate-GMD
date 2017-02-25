@@ -1,8 +1,12 @@
-package com.bx.android.lesson1;
+package com.bx.android.lesson1.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.bx.android.lesson1.fragments.ActivityFragment;
+import com.bx.android.lesson1.fragments.InboxFragment;
+import com.bx.android.lesson1.fragments.TimeLineFragment;
 
 /**
  * Created by pjohnson on 20/02/17.
@@ -16,9 +20,16 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return PlaceholderFragment.newInstance(position + 1);
+        switch (position) {
+            case 0:
+                return TimeLineFragment.newInstance();
+            case 1:
+                return ActivityFragment.newInstance();
+            case 2:
+                return InboxFragment.newInstance();
+            default:
+                return null;
+        }
     }
 
     @Override
@@ -29,14 +40,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position) {
-            case 0:
-                return "SECTION 1";
-            case 1:
-                return "SECTION 2";
-            case 2:
-                return "SECTION 3";
-        }
-        return null;
+        return "";
     }
 }

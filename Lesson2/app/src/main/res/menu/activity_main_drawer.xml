@@ -3,13 +3,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_viewPager"
+            android:id="@+id/nav_Perfil"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="ViewPager with Tabs" />
+            android:title="Perfil" />
         <item
-            android:id="@+id/nav_actionBarViewPager"
+            android:id="@+id/nav_destacados"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="ActionBar with ViewPager" />
+            android:title="Destacados" />
+        <item
+            android:id="@+id/nav_misMomentos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Mis Momentos" />
+        <item
+            android:id="@+id/nav_listas"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Listas" />
+        <item
+            android:id="@+id/nav_conecta"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Conecta" />
     </group>
 
     <item android:title="Communicate">
