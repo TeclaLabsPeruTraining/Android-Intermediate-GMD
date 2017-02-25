@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     tools:context="com.gmd.lessons.multimedia.ProfileActivity">
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
             android:layout_margin="10dp"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/shape_circle"
+            android:background="#e0e0e0"
             android:id="@+id/iviPhoto"/>
+        <!--android:background="@drawable/shape_circle"-->
 </RelativeLayout>

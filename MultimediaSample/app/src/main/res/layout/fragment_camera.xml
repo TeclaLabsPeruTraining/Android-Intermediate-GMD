@@ -1,23 +1,30 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context="com.gmd.lessons.multimedia.fragments.CameraFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <SurfaceView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#151515"
-        android:id="@+id/surfCamera"/>
-   <ImageView
-       android:layout_width="80dp"
-       android:layout_height="wrap_content"
-       android:adjustViewBounds="true"
-       android:layout_alignParentBottom="true"
-       android:layout_centerHorizontal="true"
-       android:padding="10dp"
-       android:src="@mipmap/camera_white"
-       android:id="@+id/iviCamera"/>
+        android:background="#9e9e9e"
+        android:layout_weight="1"
+        android:id="@+id/flayCamera"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#bdbdbd">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@mipmap/camera_white"
+            android:id="@+id/iviCamera"/>
+    </RelativeLayout>
 
-</RelativeLayout>
+
+</LinearLayout>

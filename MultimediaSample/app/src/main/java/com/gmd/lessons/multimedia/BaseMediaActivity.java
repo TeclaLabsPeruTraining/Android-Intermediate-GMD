@@ -24,8 +24,6 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static android.R.attr.data;
-
 /**
  * Created by emedinaa on 24/02/17.
  */
