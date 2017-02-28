@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "136271545208",
+    "firebase_url": "https://sharp-kayak-112623.firebaseio.com",
+    "project_id": "sharp-kayak-112623",
+    "storage_bucket": "sharp-kayak-112623.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136271545208:android:0309475bd979c263",
+        "android_client_info": {
+          "package_name": "com.gmd.lessons.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136271545208-o0tppbll26ofr0lo6sh183fpbtu2qs57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZd5jlNRZXXFvH0jcl6JWekfPT2b0tMMw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
