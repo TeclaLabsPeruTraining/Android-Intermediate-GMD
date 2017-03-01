@@ -7,7 +7,7 @@ Android Intermediate (23h)
 
 En este sesión veremos como conectar nuestra aplicación Android con un Base de Datos que esta en la nube mediante servicios RESTFul, para lo cual usaremos Backendless.
 
-1. Crear un proyecto en backendless y agregar la tabla Note con los siguientes campos name (String) y description (String). Tambien usaremos la tabla User que viene por defecto . Probar los endpoints de BackendLess [link](https://github.com/ISILAndroid/am2_group2016_2/blob/Lesson8/RestEndPoints.md)
+1. Crear un proyecto en backendless y agregar la tabla Note con los siguientes campos name (String) y description (String). Tambien usaremos la tabla User que viene por defecto . Probar los endpoints de BackendLess [link](./RestEndPoints.md)
 
 2. Usaremos el proyecto de Notas para la integración
 
