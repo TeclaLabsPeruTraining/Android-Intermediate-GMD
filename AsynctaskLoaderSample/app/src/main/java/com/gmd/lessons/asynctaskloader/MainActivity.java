@@ -1,10 +1,9 @@
 package com.gmd.lessons.asynctaskloader;
 
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,6 +17,11 @@ import com.gmd.lessons.asynctaskloader.data.model.LogInResponse;
 import com.gmd.lessons.asynctaskloader.model.UserEntity;
 import com.gmd.lessons.asynctaskloader.presenter.LogInPresenter;
 import com.gmd.lessons.asynctaskloader.presenter.LogInView;
+
+/**
+ * username : admin@gmail.com
+ * password : 123456
+ */
 
 public class MainActivity extends AppCompatActivity implements LogInView {
 

@@ -17,7 +17,10 @@ import com.gmd.lessons.presenter.LogInPresenter;
 import com.gmd.lessons.presenter.LogInView;
 import com.gmd.lessons.storage.PreferencesHelper;
 
-
+/**
+ * username : admin@gmail.com
+ * password : 123456
+ */
 public class LoginActivity extends AppCompatActivity implements LogInView {
 
     private Button btnLogin;
@@ -115,10 +118,6 @@ public class LoginActivity extends AppCompatActivity implements LogInView {
         this.rlayLoading.setVisibility(View.GONE);
     }
 
-    @Override
-    public Context getContext() {
-        return this;
-    }
 
     @Override
     public void onMessageError(String message) {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GMDAppTemplate</string>
+    <string name="app_name">RestSample</string>
     <string name="logout">Cerrar sesi\u00F3n</string>
     <string name="esta_es_una_nota">Esta es un nota</string>
     <string name="my_note">Notes App</string>

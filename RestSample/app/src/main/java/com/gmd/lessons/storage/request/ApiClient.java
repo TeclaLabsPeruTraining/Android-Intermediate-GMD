@@ -50,8 +50,8 @@ public class ApiClient {
 
         @Headers({
                 "Content-Type: application/json",
-                "application-id: B9D12B47-6B88-8471-FFAD-2B4FFD1EA100",
-                "secret-key: 46C1AEC7-6BA7-D1C7-FF6A-FD9EA95C0C00",
+                "application-id: FF14D613-D0B0-6A6A-FF40-29E7E8E8D100",
+                "secret-key: AA499423-00EC-1F0B-FF2E-C78F36087700",
                 "application-type: REST"
         })
         //v1/users/login
@@ -61,8 +61,8 @@ public class ApiClient {
 
         @Headers({
                 "Content-Type: application/json",
-                "application-id: B9D12B47-6B88-8471-FFAD-2B4FFD1EA100",
-                "secret-key: 46C1AEC7-6BA7-D1C7-FF6A-FD9EA95C0C00",
+                "application-id: FF14D613-D0B0-6A6A-FF40-29E7E8E8D100",
+                "secret-key: AA499423-00EC-1F0B-FF2E-C78F36087700",
                 "application-type: REST"
         })
         //v1/data/Notes
@@ -72,8 +72,8 @@ public class ApiClient {
 
         @Headers({
                 "Content-Type: application/json",
-                "application-id: B9D12B47-6B88-8471-FFAD-2B4FFD1EA100",
-                "secret-key: 46C1AEC7-6BA7-D1C7-FF6A-FD9EA95C0C00",
+                "application-id: FF14D613-D0B0-6A6A-FF40-29E7E8E8D100",
+                "secret-key: AA499423-00EC-1F0B-FF2E-C78F36087700",
                 "application-type: REST"
         })
         @POST("/v1/data/Notes")

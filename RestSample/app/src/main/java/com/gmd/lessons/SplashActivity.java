@@ -3,6 +3,7 @@ package com.gmd.lessons;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -13,7 +14,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class SplashActivity extends ActionBarActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private static final long SPLASH_SCREEN_DELAY = 2000;
 
@@ -43,14 +44,4 @@ public class SplashActivity extends ActionBarActivity {
         timer.schedule(task, SPLASH_SCREEN_DELAY);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return false;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        return false;
-    }
 }

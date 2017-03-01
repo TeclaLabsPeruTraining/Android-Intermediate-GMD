@@ -157,10 +157,6 @@ public class MainActivity extends AppCompatActivity implements NotesView {
         this.rlayLoading.setVisibility(View.GONE);
     }
 
-    @Override
-    public Context getContext() {
-        return this;
-    }
 
     @Override
     public void onMessageError(String message) {

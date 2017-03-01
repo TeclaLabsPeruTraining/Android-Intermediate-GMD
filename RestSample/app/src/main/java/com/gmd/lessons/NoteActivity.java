@@ -3,6 +3,7 @@ package com.gmd.lessons;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +19,7 @@ import com.gmd.lessons.view.fragments.DetailsFragment;
 import com.gmd.lessons.view.listeners.OnNoteListener;
 
 
-public class NoteActivity extends ActionBarActivity  implements OnNoteListener, MyDialogListener {
+public class NoteActivity extends AppCompatActivity implements OnNoteListener, MyDialogListener {
 
     public static final  int ADD_NOTE=100;
     public static final  int DETAIL_NOTE=101;
@@ -84,17 +85,6 @@ public class NoteActivity extends ActionBarActivity  implements OnNoteListener, 
         }
     }
 
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        return false;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return false;
-    }
 
 
     @Override

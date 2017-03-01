@@ -1,6 +1,5 @@
 package com.gmd.lessons.presenter;
 
-import android.content.Context;
 
 import com.gmd.lessons.entity.NoteEntity;
 
@@ -13,7 +12,6 @@ public interface NotesView {
 
     void showLoading();
     void hideLoading();
-    Context getContext();
 
     void onMessageError(String message);
     void renderNotes(List<NoteEntity> notes);
