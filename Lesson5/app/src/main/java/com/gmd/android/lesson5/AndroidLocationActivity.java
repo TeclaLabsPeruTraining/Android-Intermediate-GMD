@@ -40,9 +40,7 @@ public class AndroidLocationActivity extends AppCompatActivity {
 
             // Es llamado cuando una nueva locacion es encontrada por el proveedor de locacion
             public void onLocationChanged(Location location) {
-                String str = String.format("latitud %f, longitud %f", location.getLatitude(), location.getLongitude());
-                Log.e("Pablo", str);
-                textView.setText(str);
+                useLocation(location);
             }
 
             public void onStatusChanged(String provider, int status, Bundle extras) {
@@ -59,10 +57,15 @@ public class AndroidLocationActivity extends AppCompatActivity {
         };
     }
 
+    private void useLocation(Location location) {
+        String str = String.format("latitud %f, longitud %f", location.getLatitude(), location.getLongitude());
+        Log.e("Pablo", str);
+        textView.setText(str);
+    }
+
     private void requestLocationsUpdate() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_REQUEST_CODE);
-
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, locationListener);
@@ -79,6 +82,7 @@ public class AndroidLocationActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        getLastKnownLocation();
         requestLocationsUpdate();
     }
 
@@ -91,14 +95,32 @@ public class AndroidLocationActivity extends AppCompatActivity {
     private void pauseLocationsUpdate() {
         // Remove the listener you previously added
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_REQUEST_CODE);
             return;
         }
         locationManager.removeUpdates(locationListener);
     }
 
-    /** Determina si una locacion es mejor que la actual mejor locacion
-     * @param newLocation  The new Location that you want to evaluate
-     * @param currentBestLocation  The current Location fix, to which you want to compare the new one
+    private void getLastKnownLocation() {
+        String locationProvider = LocationManager.NETWORK_PROVIDER;
+        // Or use LocationManager.GPS_PROVIDER
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, FINE_LOCATION_REQUEST_CODE);
+            return;
+        }
+        Location lastKnownLocation = locationManager.getLastKnownLocation(locationProvider);
+        if (lastKnownLocation != null) {
+            useLocation(lastKnownLocation);
+        }
+
+    }
+
+    /**
+     * Determina si una locacion es mejor que la actual mejor locacion
+     *
+     * @param newLocation         The new Location that you want to evaluate
+     * @param currentBestLocation The current Location fix, to which you want to compare the new one
      */
     protected boolean isBetterLocation(Location newLocation, Location currentBestLocation) {
         if (currentBestLocation == null) {
@@ -142,7 +164,9 @@ public class AndroidLocationActivity extends AppCompatActivity {
         return false;
     }
 
-    /** Chequea si son el mismo proveedor */
+    /**
+     * Chequea si son el mismo proveedor
+     */
     private boolean isSameProvider(String provider1, String provider2) {
         if (provider1 == null) {
             return provider2 == null;
