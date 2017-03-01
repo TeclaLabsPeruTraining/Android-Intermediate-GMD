@@ -12,7 +12,7 @@
     
       email(STRING) | name(STRING)  | password(STRING) | objectId(STRING)
       ------------ | ------------- | ------------- | -------------
-      isil@qd.pe | eduardo | 123456 | D82B3021-9EC7-36B5-FFC2-859155CD0300
+      admin@gmail.com | Admin | 123456 | D82B3021-9EC7-36B5-FFC2-859155CD0300
 
     - Crear la tabla Notes
     
