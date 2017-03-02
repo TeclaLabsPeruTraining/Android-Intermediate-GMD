@@ -45,48 +45,13 @@ Android Intermediate (23h)
 
   - Notificaciones (Toast, barra de estados, Dialogos, Snackbar)
 
-7. Multimedia
+## Referencias 
 
-  - Derivando funcionalidad a otras aplicaciones (Cámara de foto, agenda de contactos, email, Lector de códigos QR, etc)
+- Appbar [https://developer.android.com/training/appbar/index.html](https://developer.android.com/training/appbar/index.html)
 
-8. Android M
+- Dialog [https://developer.android.com/guide/topics/ui/dialogs.html](https://developer.android.com/guide/topics/ui/dialogs.html)
 
-  - Android permission system
+- Snackbar [https://material.io/guidelines/components/snackbars-toasts.html](https://material.io/guidelines/components/snackbars-toasts.html)
 
-9. Presentación Final de Proyectos
-
-### Lecciones :
-
-- Lección 1 
-  
-  Procesos en Segundo Plano
-  
-- Lección 2 
-  
-  Navegación
-  
-- Lección 3
-  
-  Persistencia de Datos
-  
-- Lección 4 
-  
-  Conexión Remota
-  
-- Lección 5
-  
-  Google Maps y Geolocalización
-  
-- Lección 6
-  
-  Notificaciones
-  
-- Lección 7
-
-  Multimedia
-  
-- Lección 8
-
-  Android M y Presentación final de proyectos
   
   
