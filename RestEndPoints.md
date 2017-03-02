@@ -68,6 +68,16 @@
     ```
    Pruebas en Postman
    
+   Content-Type application/json
+   application-type REST
+   secret-key 4FC950FE-9125-43B9-FF54-96BE821A8C00
+   application-id 74C97EAE-51FE-A1F2-FFD7-8289F70EDA00
+   
+    {
+   "login" :"admin@abc.com",
+   "password" : "123456"
+ }
+   
    4. Login
    ![](./images/postman_login_headers.PNG)
    ![](./images/postman_login_request.PNG)
