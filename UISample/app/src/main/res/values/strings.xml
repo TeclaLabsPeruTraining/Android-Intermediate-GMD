@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">GMDAppTemplate</string>
+    <string name="app_name">UISample</string>
+    <string name="show_dialog">show Dialog</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="android_app">ANDROID APP</string>
+    <string name="signin">Sign in</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="action_favorite">Favorite</string>
+    <string name="action_settings">Settings</string>
 </resources>

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
     defaultConfig {
-        applicationId "com.gmd.lessons"
+        applicationId "com.gmd.lessons.uisample"
         minSdkVersion 14
         targetSdkVersion 23
         versionCode 1
