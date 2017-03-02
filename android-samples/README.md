@@ -1,3 +1,5 @@
+Obtenido de https://github.com/googlemaps/android-samples
+
 Google Maps Android API v2 Samples
 ===================================
 
