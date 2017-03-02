@@ -3,7 +3,7 @@ Android Intermediate (23h)
 
 ##Google Maps y Geolocalización
 
-  - Localización mediante el dispositivo
+  - Localización mediante el dispositivo usando el API de Android
 
   - Google API
 
