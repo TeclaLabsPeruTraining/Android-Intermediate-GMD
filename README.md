@@ -9,6 +9,8 @@ Android Intermediate (23h)
 
 - Appbar [https://developer.android.com/training/appbar/index.html](https://developer.android.com/training/appbar/index.html)
 
+- Menus [https://developer.android.com/guide/topics/ui/menus.html](https://developer.android.com/guide/topics/ui/menus.html)
+
 - Dialog [https://developer.android.com/guide/topics/ui/dialogs.html](https://developer.android.com/guide/topics/ui/dialogs.html)
 
 - Snackbar [https://material.io/guidelines/components/snackbars-toasts.html](https://material.io/guidelines/components/snackbars-toasts.html)
