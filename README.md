@@ -104,6 +104,62 @@ Acciones de Menu
 
 ## FragmentDialog
 
+Para construir un Dialog personalizado , lo primero es crear la vista 
+```java
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragments.CustomDialogFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/yellow"
+        android:text="@string/android_app"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:contentDescription="@string/app_name" />
+    <EditText
+        android:id="@+id/eteUsername"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="@string/username" />
+    <EditText
+        android:id="@+id/etePassword"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/password"/>
+
+
+</LinearLayout>
+```
+
+Luego para poder comunicar el dialogo con una actividad o fragment, usamos una interface donde definimos todos lo métodos sean requeridos. En este caso , nos bastaría saber si acepto o cancelo .
+```java
+public interface CustomDialogListener {
+
+    void onAction(Object object);
+    void onDialogPositive(Object object);
+    void onDialogNegative(Object object);
+}
+```
+Nuestro DialogFragment quedaría de la siguiente manera 
+
 ```java
 package com.gmd.lessons.uisample.fragments;
 
@@ -214,6 +270,24 @@ public class CustomDialogFragment extends DialogFragment {
 }
 
 ```
+Finalmente, para invocar un dialogo realizamos lo siguiente :
+
+```java
+
+   private void showCustomDialog() {
+        CustomDialogFragment dialog = new CustomDialogFragment();
+        dialog.show(getSupportFragmentManager(), "CustomDialogFragment");
+
+    }
+
+    private void showTransparentDialog() {
+        TransparentDialogFragment dialog = new TransparentDialogFragment();
+        dialog.show(getSupportFragmentManager(), "TransparentDialogFragment");
+
+    }
+    
+```
+
 ## Referencias 
 
 - Appbar [https://developer.android.com/training/appbar/index.html](https://developer.android.com/training/appbar/index.html)
