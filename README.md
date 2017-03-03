@@ -15,5 +15,7 @@ Android Intermediate (23h)
 
 - Snackbar [https://material.io/guidelines/components/snackbars-toasts.html](https://material.io/guidelines/components/snackbars-toasts.html)
 
+- UUID [https://android-developers.googleblog.com/2011/03/identifying-app-installations.html](https://android-developers.googleblog.com/2011/03/identifying-app-installations.html)
+
   
   
