@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 
 import com.gmd.lessons.fcm.MyNotificationActivity;
@@ -25,21 +26,39 @@ public class FcmService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-        Log.d(TAG, "message body " + remoteMessage.getNotification().getBody());
-        buildNotification(remoteMessage.getNotification().getBody());
+        Log.d(TAG, "Notification " + remoteMessage.getData());
+        //buildNotification(remoteMessage.getNotification().getBody());
+        String message="";
+        String title = "Nueva notificacion";
+
+        if(remoteMessage.getData()!=null){
+            message= remoteMessage.getData().get("message");
+            title= remoteMessage.getData().get("android-content-title");
+        }
+        buildNotification(title, message);
+        buildBroadCast(message);
     }
 
-    private void buildNotification( String messageBody) {
+    private void buildBroadCast(String message) {
+
+        Intent broadCastIntent = new Intent("update-message");
+        broadCastIntent.putExtra("message", message);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(broadCastIntent);
+    }
+
+    private void buildNotification( String title,String messageBody) {
         Intent intent = new Intent( this , MyNotificationActivity. class );
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("MESSAGE",messageBody);
 
         PendingIntent resultIntent = PendingIntent.getActivity( this , 0, intent,
                 PendingIntent.FLAG_ONE_SHOT);
 
         Uri notificationSoundURI = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+
         NotificationCompat.Builder mNotificationBuilder = new NotificationCompat.Builder( this)
                 .setSmallIcon(R.mipmap.ic_launcher)
-                .setContentTitle("My notification...")
+                .setContentTitle(title)
                 .setContentText(messageBody)
                 .setAutoCancel(true)
                 .setSound(notificationSoundURI)

@@ -1,0 +1,4 @@
+{
+  "code": 5005,
+  "message": "Wrong json format for device registration: Unrecognized field \"ANDROIDOS\" (class com.backendless.management.DeviceRegistrationDto), not marked as ignorable (7 known properties: \"channels\", \"deviceId\", \"deviceToken\", \"os\", \"osVersion\", \"id\", \"expiration\"])\n at [Source: N/A; line: -1, column: -1] (through reference chain: com.backendless.management.DeviceRegistrationDto[\"ANDROIDOS\"])"
+}
