@@ -5,7 +5,4 @@ Android Intermediate (23h)
 
 Android M
 
-  - Android permission system
-
-
-
+  - [Android permission system](https://github.com/TeclaLabsPeruTraining/Android-Intermediate-GMD/blob/Lesson8-AndroidM/permisos.md)
