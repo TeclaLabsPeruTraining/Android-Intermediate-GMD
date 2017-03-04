@@ -66,7 +66,7 @@ Luego de seleccionar una foto o tomar una foto con la cámara , recibimos la res
     
 ```
 
-* Sucede alguna  veces y en algunos dispositivos que cuando recibimos la respuesta no llega la foto, para esto previamente en la llamada enviamos un file donde esperamos se almacene la foto y luega poder acceder a esta.
+* Sucede alguna  veces y en algunos dispositivos que cuando recibimos la respuesta no llega la foto, paraevitar esto,  previamente en la llamada enviamos un file donde esperamos se almacene la foto y luega poder acceder a esta.
 
 Procesar las imagenes :
 
