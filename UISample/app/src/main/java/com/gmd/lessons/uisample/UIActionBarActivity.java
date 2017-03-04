@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class UIActionBarActivity extends AppCompatActivity {
 
@@ -51,7 +52,9 @@ public class UIActionBarActivity extends AppCompatActivity {
                 // as a favorite...
                 showMessage("Icono de favoritos");
                 return true;
-
+            case R.id.action_android:
+                showToast("Item Android");
+                return true;
             default:
                 // If we got here, the user's action was not recognized.
                 // Invoke the superclass to handle it.
@@ -61,6 +64,9 @@ public class UIActionBarActivity extends AppCompatActivity {
     }
 
 
+    public void showToast(String message){
+        Toast.makeText(this,message,Toast.LENGTH_LONG).show();
+    }
     public void showMessage(String message) {
         Snackbar snackbar = Snackbar
                 .make(container, message, Snackbar.LENGTH_LONG);

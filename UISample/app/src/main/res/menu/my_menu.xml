@@ -7,6 +7,12 @@
         android:icon="@mipmap/ic_favorite_48px"
         android:title="@string/action_favorite"
         app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_android"
+        android:icon="@mipmap/ic_launcher"
+        android:title="Android"
+        app:showAsAction="ifRoom"/>
+
 
     <!-- Settings, should always be in the overflow -->
     <item android:id="@+id/action_settings"
