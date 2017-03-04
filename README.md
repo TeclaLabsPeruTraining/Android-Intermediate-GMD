@@ -166,6 +166,19 @@ Ajustar orientación :
         return degree;
     }
 ```
+
+Finalmente, mostramos la imágen en un ImageView
+
+```java
+   @Override
+    protected void renderPhoto() {
+        super.renderPhoto();
+        Bitmap bitmap= imageHelper.bitmapByPath(iviPhoto.getWidth(),
+                iviPhoto.getHeight(),currentPhotoPath);
+        iviPhoto.setImageBitmap(bitmap);
+    }
+```
+
 ## Referencias 
 
 - Camera API [https://developer.android.com/guide/topics/media/camera.html](https://developer.android.com/guide/topics/media/camera.html)
