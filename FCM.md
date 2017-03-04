@@ -30,7 +30,7 @@
 
   - En este caso usaremos el API Rest de Backendless y la función de mensajería. La herramienta de mensajeria te permite configurarlo con FCM, donde te pide el "ID de remitente" y la "Clave de servidor Heredada"
   
-  - Revisar la documentación de backendless, usando el API Rest  para registrar un dispositivo , enviar un notificación, etc etc [https://backendless.com/documentation/messaging/rest/messaging_overview.htm](https://backendless.com/documentation/messaging/rest/messaging_overview.htm)
+  - Revisar la documentación de backendless, luego usar el API Rest  para registrar un dispositivo , enviar un notificación, etc etc [https://backendless.com/documentation/messaging/rest/messaging_overview.htm](https://backendless.com/documentation/messaging/rest/messaging_overview.htm)
   
   
 ## Cliente Android
