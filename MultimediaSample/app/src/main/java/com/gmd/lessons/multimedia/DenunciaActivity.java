@@ -5,6 +5,7 @@ package com.gmd.lessons.multimedia;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -103,6 +104,10 @@ public class DenunciaActivity extends BaseMediaActivity implements View.OnClickL
         super.renderPhoto();
         Bitmap bitmap= imageHelper.bitmapByPath(iviPhoto.getWidth(),
                 iviPhoto.getHeight(),currentPhotoPath);
+        /*BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+
+        Bitmap bitmap= BitmapFactory.decodeFile(currentPhotoPath,bmOptions);
+        */
         iviPhoto.setImageBitmap(bitmap);
     }
 }
