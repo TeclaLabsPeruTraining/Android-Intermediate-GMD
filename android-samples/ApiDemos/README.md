@@ -7,14 +7,14 @@ Demuestran las funcionalidades disponibles en el API.
 Esta aplicacion fue escrita para un minSdk 9 y usando la v4 support library pero puede ser facilmente adaptable al uso de la funcionalidad nativa.
 (Por ejemplo, reemplazar el uso de ``SupportMapFragment`` por ``MapFragment``.)
 
-Pre-requisites
+Pre-requisitos
 --------------
 
 - Android SDK v23
 - Latest Android Build Tools
 - Android Support Repository
 
-Getting Started
+Comenzando
 ---------------
 
 Este ejemplo usa el Gradle build system.
