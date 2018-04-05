@@ -1,12 +1,11 @@
 Google Maps Android API Demos
 ===================================
 
-These are demos for the [Google Maps Android API v2](https://developers.google.com/maps/documentation/android-api/).
-They demonstrate most of the features available in the API.
+Estos son demos de [Google Maps Android API v2](https://developers.google.com/maps/documentation/android-api/).
+Demuestran las funcionalidades disponibles en el API.
 
-This app was written for a minSdk of 9 and the v4 support library, but it can be easily adapted to
-use native functionality instead.
-(For example replacing ``SupportMapFragment`` with ``MapFragment``.)
+Esta aplicacion fue escrita para un minSdk 9 y usando la v4 support library pero puede ser facilmente adaptable al uso de la funcionalidad nativa.
+(Por ejemplo, reemplazar el uso de ``SupportMapFragment`` por ``MapFragment``.)
 
 Pre-requisites
 --------------
@@ -18,37 +17,20 @@ Pre-requisites
 Getting Started
 ---------------
 
-This sample use the Gradle build system.
+Este ejemplo usa el Gradle build system.
 
-First download the samples by cloning this repository or downloading an archived
-snapshot. (See the options at the top of the page.)
+Primero descargar el codigo.
 
-In Android Studio, use the "Import non-Android Studio project" or 
-"Import Project" option. Next select the ApiDemos/ directory that you downloaded
-from this repository.
-If prompted for a gradle configuration accept the default settings. 
+Importarlo en Android Studio
 
-Alternatively use the "gradlew build" command to build the project directly.
+Agregar el API key de los servicios de google al archivo `debug/values/google_maps_api.xml`.
+Se obtiene de ahi desde el archivo `AndroidManifest.xml`.
+Mira la [guia rapida para obtener un API key](https://developers.google.com/maps/documentation/android-api/signup).
 
-Add your API key to the file `debug/values/google_maps_api.xml`.
-It's pulled from there into your app's `AndroidManifest.xml` file.
-See the [quick guide to getting an API key](https://developers.google.com/maps/documentation/android-api/signup).
-
-Support
+Soporte
 -------
 
 - Stack Overflow: https://stackoverflow.com/questions/tagged/android+google-maps
-
-If you have discovered an issue with the Google Maps Android API v2, please see
-the resources here: https://developers.google.com/maps/documentation/android-api/support
-
-If you've found an error in these samples, please file an issue:
-https://github.com/googlemaps/android-samples/issues
-
-Patches are encouraged, and may be submitted according to the instructions in
-CONTRIBUTING.md.
-
-![Analytics](https://ga-beacon.appspot.com/UA-12846745-20/android-samples-apidemos/readme?pixel)
 
 License
 -------
